@@ -167,122 +167,90 @@ form button:hover {
 
 body {
     background-color: #7ea6b4;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', Arial, sans-serif;
     color: #172a3b;
-    margin: 20px;
+    margin: 0;
 }
 
-/* Judul */
+/* ===== NAVBAR ===== */
+nav {
+    background-color: #5f90a1;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #172a3b;
+}
+
+/* ===== JUDUL ===== */
 h1 {
     text-align: center;
+    margin-top: 40px;
     color: #1b4064f8;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Cambria, Georgia, serif;
 }
 
-/* Container Tengah */
+/* ===== CONTAINER ===== */
 .container {
-    max-width: 800px;
-    margin: auto;
-}
-
-/* Card Event */
-.event-card {
-    background-color: #5f90a1;
+    max-width: 850px;
+    margin: 40px auto;
     padding: 20px;
+}
+
+/* ===== CARD ===== */
+.card {
+    background-color: #5f90a1;
+    padding: 25px;
+    border-radius: 15px;
     margin-bottom: 25px;
-    border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    transition: 0.3s;
 }
 
-.event-card h2 {
-    color: #172a3b;
+.card:hover {
+    transform: translateY(-5px);
 }
 
-.tanggal {
-    font-style: italic;
-    margin-bottom: 10px;
-}
-
+/* ===== BADGE ===== */
 .badge {
     display: inline-block;
     margin-top: 10px;
-    padding: 6px 12px;
+    padding: 6px 15px;
     background-color: #96b6c0;
-    color: #000;
     border-radius: 20px;
     font-weight: bold;
 }
 
-/* Footer */
-footer {
-    text-align: center;
-    margin-top: 40px;
-}
-
-
-
-body {
-    background-color: #7ea6b4;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #172a3b;
-    margin: 20px;
-}
-
-h1 {
-    text-align: center;
-    color: #1b4064f8;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-/* Container Tengah */
-.container {
-    max-width: 700px;
-    margin: auto;
-}
-
-/* Box Alamat */
-.info {
-    background-color: #5f90a1;
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 25px;
-}
-
-/* Map */
-.map {
-    margin-bottom: 25px;
-}
-
-/* Form */
-form {
-    background-color: #5f90a1;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-form label {
-    display: block;
-    margin-top: 10px;
-    font-weight: bold;
-}
-
+/* ===== FORM ===== */
 form input,
 form textarea {
     width: 100%;
-    padding: 8px;
-    margin-top: 5px;
+    padding: 10px;
+    margin-top: 8px;
     margin-bottom: 15px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+    border-radius: 8px;
+    border: none;
 }
 
 form button {
     background-color: #96b6c0;
-    color: black;
-    padding: 10px 15px;
+    color: #172a3b;
+    padding: 10px 18px;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
 form button:hover {
@@ -290,7 +258,10 @@ form button:hover {
     color: white;
 }
 
+/* ===== FOOTER ===== */
 footer {
     text-align: center;
+    padding: 20px;
+    background-color: #5f90a1;
     margin-top: 40px;
 }
